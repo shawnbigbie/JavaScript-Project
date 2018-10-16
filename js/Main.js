@@ -1,3 +1,7 @@
+import { films } from '../assets/films.js'
+import { people } from '../assets/people.js'
+import { species } from '../assets/species.js'
+
 let openingCrawl = document.querySelector("#openingCrawl")
 let movieTitle = document.querySelector("#movieTitle")
 let personName = document.querySelector("#personName")
@@ -59,3 +63,6 @@ results.forEach( (people) =>{
 //  let listItem =document.createElement('p')
 //  listItem.textContent = results[0].opening_crawl
 //  personName.appendChild(listItem)
+
+
+// Import and Export JS //
