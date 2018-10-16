@@ -5,9 +5,7 @@ import { species } from '../assets/species.js'
 let openingCrawl = document.querySelector("#openingCrawl")
 let movieTitle = document.querySelector("#movieTitle")
 let personName = document.querySelector("#personName")
-// let name = document.querySelector("#name")
 
-// https://swapi.co/api/people/3 Results //
 let results = [
 {
 	"name": "R2-D2",
