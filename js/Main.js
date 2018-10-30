@@ -1,3 +1,4 @@
+import { senatorData} from '../assets/senators.js'
 import { films } from '../assets/films.js'
 import { people } from '../assets/people.js'
 import { species } from '../assets/species.js'
