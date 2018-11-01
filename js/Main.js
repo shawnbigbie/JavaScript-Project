@@ -81,3 +81,28 @@ console.log(`There are ${republicans.length} republicans and ${democrats.length}
 console.log(`There are ${males.length} males in the Senate and ${females.length} females`)
 
 console.log(`The most loyal republican is ${loyalRepublican.first_name} ${loyalRepublican.last_name} from ${loyalRepublican.state} who votes with republicans ${loyalRepublican.votes_with_party_pct}% of the time.`)
+
+// makes a new prop for each senator added senator imgURL to each one with there govtrack id
+const senWithPics = senators.map(senator => {
+    senator.imgURL = `https://www.govtrack.us/data/photos/${senator.govtrack_id}-200px.jpeg`
+    if(senator.govtrack_id === '412743'){
+        senator.imgURL = '../assets/220px-Cindy_Hyde-Smith_official_photo.jpeg'
+    }
+    return senator
+})
+
+console.log(senWithPics)
+
+// adding the images to the div with class id of img container
+let pictureDiv = document.querySelector('.imgcontainer')
+
+senWithPics.forEach(senator => {
+    let senatorPic = document.createElement('img') // dose this to each sen
+    let senatorFig = document.createElement('figure')
+    let senatorCap = document.createElement('figcaption')
+    senatorCap.textContent = `${senator.first_name} ${senator.last_name}`
+    senatorPic.src = senator.imgURL
+    senatorFig.appendChild(senatorPic)
+    senatorFig.appendChild(senatorCap)
+    pictureDiv.appendChild(senatorFig)
+})
