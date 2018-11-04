@@ -97,7 +97,8 @@ console.log(senWithPics)
 let pictureDiv = document.querySelector('.imgcontainer')
 
 senWithPics.forEach(senator => {
-    let senatorPic = document.createElement('img') // dose this to each sen
+    let senatorPic = document.createElement('img')// dose this to each sen
+    // senatorPic.className = "test" adds the html class to be asined to test
     let senatorFig = document.createElement('figure')
     let senatorCap = document.createElement('figcaption')
     senatorCap.textContent = `${senator.first_name} ${senator.last_name}`
