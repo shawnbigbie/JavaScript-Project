@@ -1,0 +1,25 @@
+body {
+    margin: 0;
+    font-family: sans-serif;
+    background-color: lightgray;
+}
+
+.wrapper {
+    background-color: #424242;
+    padding: 12px;
+    width: 60%;
+    margin: auto;
+    color: #CCCCCC;
+}
+
+.form-sub {
+    padding-top: 12px;
+}
+
+#header{
+    text-align: center;
+}
+
+#warning{
+    text-align: center;
+}

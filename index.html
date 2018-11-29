@@ -16,9 +16,34 @@
 </head>
 
 <body>
-    <footer>
-      <p>Copyright &copy; Shawn Bigbie, 2018</p>
-    </footer>
+    <h1 id="header"> Mad Lib (Today I Went To The Zoo) </h1>
+        <p id="warning">------- Enter In all the Field Below -------</p>
+        <div class='wrapper'>
+                <form id='madlibForm'>
+                <div class='form-uname'>
+                    <lable id='nameLable' for='inputField'>Type a Adajective:</lable>
+                    <input id='inputField' type='text' maxlength='25'></input>
+                </div>
+                <div class='form-uname'>
+                    <lable id='nameLable' for='inputField'>Type a Noun:</lable>
+                    <input id='inputField' type='text' maxlength='25'></input>
+                </div>
+                <div class='form-uname'>
+                    <lable id='nameLable' for='inputField'>Type a Verb:</lable>
+                    <input id='inputField' type='text' maxlength='25'></input>
+                </div>
+
+
+
+                <div class='form-sub'>
+                    <button id='subButton' type='button'>Print your MadLib!</button>
+                </div>
+            </form>
+            
+            <div>
+                <p id='madlib'></p>
+            </div>
+            
     <script type="module" src="js/Main.js"></script>
 </body>
 </html>
