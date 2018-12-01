@@ -10,40 +10,47 @@
 
     <title>Shawn's JavaScript Project</title>
 
+    <!-- Other Links and CSS -->
     <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="css/stylesheet.css">
 
 </head>
-
-<body>
-    <h1 id="header"> Mad Lib (Today I Went To The Zoo) </h1>
-        <p id="warning">------- Enter In all the Field Below -------</p>
-        <div class='wrapper'>
-                <form id='madlibForm'>
-                <div class='form-uname'>
-                    <lable id='nameLable' for='inputField'>Type a Adajective:</lable>
-                    <input id='inputField' type='text' maxlength='25'></input>
-                </div>
-                <div class='form-uname'>
-                    <lable id='nameLable' for='inputField'>Type a Noun:</lable>
-                    <input id='inputField' type='text' maxlength='25'></input>
-                </div>
-                <div class='form-uname'>
-                    <lable id='nameLable' for='inputField'>Type a Verb:</lable>
-                    <input id='inputField' type='text' maxlength='25'></input>
-                </div>
-
-
-
-                <div class='form-sub'>
-                    <button id='subButton' type='button'>Print your MadLib!</button>
-                </div>
-            </form>
-            
-            <div>
-                <p id='madlib'></p>
-            </div>
-            
-    <script type="module" src="js/Main.js"></script>
-</body>
+  <body> 
+      
+    <div id="page">
+      <div id="Message-Container">
+        <div id="message">
+          <h1>Congratulations!</h1>
+          <p>You are done.</p>
+          <p id="moves"></p>
+          <input id="okBtn" type="button" onclick="toggleVisablity('Message-Container')" value="Cool!" />
+        </div>
+      </div>
+        
+      <div id="menu">
+        <h1>Shawn's Maze Game</h1>
+        <div class="custom-select">
+          <select id="diffSelect">
+                    <option value="10"> Easy </option>
+                    <option value="15"> Medium </option>
+                    <option value="25"> Hard </option>
+                    <option value="38"> Extreme </option>                                      
+                </select>
+        </div>
+        <input id="startMazeBtn" type="button" onclick="makeMaze()" value="Start" />
+      </div>
+        
+      <div id="view">
+        <div id="mazeContainer">
+          <canvas id="mazeCanvas" class="border" height="1100" width="1100"></canvas>
+        </div>
+      </div>
+    </div>
+      
+    <!-- JavaScript and Jquery Links -->
+    <script type="text/javascript" src="js/Main.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery.touchswipe/1.6.18/jquery.touchSwipe.min.js"></script>
+      
+  </body>
 </html>
